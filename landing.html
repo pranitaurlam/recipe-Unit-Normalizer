@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Normaliser - Smart Ingredient Parser</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="nav-logo">
+                <i class="fa-solid fa-rocket"></i> Recipe Normaliser
+            </a>
+            <div class="nav-links hidden-mobile">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
+            </div>
+            <div class="flex gap-2">
+                <a href="app.html" class="btn btn-primary">Open App</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <span
+                    style="color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; display: block; margin-bottom: 1rem;">AI-Powered
+                    Kitchen Assistant</span>
+                <h1>Transform Chaos into <br>Culinary Order.</h1>
+                <p>Paste any messy recipe text and watch it instantly transform into structured data, shopping lists,
+                    and nutritional insights.</p>
+                <div class="flex gap-2">
+                    <a href="app.html" class="btn btn-primary btn-lg">Start Parsing</a>
+                    <button class="btn btn-outline btn-lg"><i class="fa-solid fa-play" style="margin-right: 8px;"></i>
+                        Watch Demo</button>
+                </div>
+
+                <div class="mt-4 flex items-center gap-2" style="opacity: 0.8;">
+                    <div class="flex">
+                        <i class="fa-solid fa-star" style="color: var(--warning);"></i>
+                        <i class="fa-solid fa-star" style="color: var(--warning);"></i>
+                        <i class="fa-solid fa-star" style="color: var(--warning);"></i>
+                        <i class="fa-solid fa-star" style="color: var(--warning);"></i>
+                        <i class="fa-solid fa-star" style="color: var(--warning);"></i>
+                    </div>
+                    <span style="font-size: 0.9rem;">Loved by 10,000+ chefs</span>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-up delay-2">
+                <!-- Abstract 3D-ish Composition -->
+                <div style="position: relative; width: 100%; height: 100%;">
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 300px; background: radial-gradient(circle, rgba(66,153,225,0.2) 0%, rgba(255,255,255,0) 70%); border-radius: 50%;">
+                    </div>
+
+                    <!-- Floating Cards representing parsed data -->
+                    <div class="float-card glass">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div style="width: 30px; height: 30px; background: #e2e8f0; border-radius: 50%;"></div>
+                            <div style="height: 10px; width: 100px; background: #e2e8f0; border-radius: 4px;"></div>
+                        </div>
+                        <div
+                            style="height: 8px; width: 80%; background: #f7fafc; margin-bottom: 8px; border-radius: 4px;">
+                        </div>
+                        <div style="height: 8px; width: 60%; background: #f7fafc; border-radius: 4px;"></div>
+                    </div>
+
+                    <div class="float-card glass" style="padding: 1rem; width: 200px;">
+                        <div class="flex justify-between items-center mb-2">
+                            <span style="font-weight: 700; color: var(--success);">Nutrition</span>
+                            <i class="fa-solid fa-chart-pie" style="color: var(--success);"></i>
+                        </div>
+                        <div class="flex justify-between" style="font-size: 0.8rem;">
+                            <span>Protein</span>
+                            <strong>24g</strong>
+                        </div>
+                        <div
+                            style="width: 100%; height: 4px; background: #edf2f7; border-radius: 2px; margin-top: 4px;">
+                            <div style="width: 70%; height: 100%; background: var(--success); border-radius: 2px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title fade-in-up">
+                <h1>Recipe Normaliser</h1>
+                <p>We handle the messy parts of cooking so you can focus on the taste.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in-up delay-1">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-magic"></i>
+                    </div>
+                    <h3>Smart Parsing</h3>
+                    <p>Our NLP engine understands "pinch of salt" and "2 large eggs" equally well, converting them into
+                        standardized metrics.</p>
+                </div>
+
+                <div class="feature-card fade-in-up delay-2">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3>Unit Conversion</h3>
+                    <p>Switch between Metric and Imperial with a single click. Scale recipes up or down without doing
+                        the math yourself.</p>
+                </div>
+
+                <div class="feature-card fade-in-up delay-3">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3>Nutrition Insights</h3>
+                    <p>Automatically calculate calories and macros based on your ingredients. Eat smarter without the
+                        extra effort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 6rem 0; background: var(--dark); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 1.5rem;">Ready to cook smarter?</h2>
+            <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 2.5rem;">Join thousands of home
+                cooks and professional chefs who have streamlined their kitchen workflow.</p>
+            <a href="app.html" class="btn btn-primary btn-lg">Open Kitchen Assistant</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #1a202c; color: #718096; padding: 4rem 0; border-top: 1px solid #2d3748;">
+        <div class="container flex justify-between items-center">
+            <div>
+                <span style="color: white; font-weight: 700; font-size: 1.2rem;">Recipe Normaliser</span>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">© 2025 Recipe Normaliser Inc.</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
